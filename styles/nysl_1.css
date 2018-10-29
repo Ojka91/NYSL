@@ -1,0 +1,79 @@
+
+body{
+    background-color: darkseagreen;
+}
+
+#cabezal{
+    background-image: url(assets/design1_image1.jpg);
+    background-size: 100%;
+    height: 300px;
+    background-position: top;
+ 
+
+}
+
+#logo{
+    position: absolute;
+    height: 100px;
+    right: 350px;
+    bottom: 280px;
+
+
+}
+
+
+
+h1{
+    color: chartreuse;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
+    margin-top: 0px;
+}
+
+
+
+h2{
+    text-align: center;
+    margin-top: -240px;
+    font-size: 35px;
+    color: green;
+     text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
+    background-image: linear-gradient(to bottom, rgba(26,148,49,1), rgba(26,148,49,0));
+}
+
+
+
+#seccio{
+ 
+    margin-left: 25%;
+    margin-bottom: 150px;
+
+}
+
+#home{
+display: block;
+    margin-top: 50px;
+    
+   
+}
+
+#about{
+    display: block;
+    margin-top: 50px;
+
+}
+
+#contact{
+    display: block;
+    margin-top: 50px;
+   
+}
+
+

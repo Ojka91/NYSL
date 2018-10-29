@@ -1,0 +1,775 @@
+/*HEADER*/
+
+body {
+
+    min-height: 100vh;
+
+
+    background-image: linear-gradient(rgba(39, 95, 99, 1), rgba(68, 150, 148, 1));
+}
+
+body::after {
+    content: "";
+    background-image: url(assets/campofutbol.jpg);
+    opacity: 0.25;
+    top: 0px;
+    bottom: 200;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    height: 100%;
+}
+
+header {
+    background-image: url(assets/messi.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 0% 64%;
+    background-size: 100%;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    z-index: 50;
+}
+
+
+h1 {
+    margin: 0px;
+    text-align: center;
+    color: #356063;
+    font-family: impact;
+    font-size: 46px;
+    text-shadow: -1px -1px 1px #C1EDE2, 1px 1px 1px #C1EDE2, -1px 1px 1px #C1EDE2, 1px -1px 1px #C1EDE2;
+    z-index: 50;
+
+
+
+}
+
+@keyframes girar {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#logo {
+    height: 150px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    box-shadow: 3px 3px 10px aquamarine;
+    animation: 2s girar 1;
+    border-radius: 50%;
+    z-index: 50;
+
+}
+
+
+nav {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 230px;
+    z-index: 50;
+
+}
+
+
+
+.clasnav {
+    display: inline;
+    margin: 12px;
+    background-color: #6DC5CC;
+    padding: 5px 12px 5px 12px;
+    border-bottom-style: solid;
+    border-bottom-color: #2B3842;
+    border-bottom-width: 2px;
+    border-top: solid;
+    border-top-color: #2B3842;
+    border-top-width: 2px;
+    border-left-style: solid;
+    border-left-color: #2B3842;
+    border-left-width: 2px;
+    border-right-style: solid;
+    border-right-color: #2B3842;
+    border-right-width: 2px;
+    border-radius: 15px 25px;
+    box-shadow: 5px 10px 18px #2B3842;
+    z-index: 50;
+
+
+
+}
+
+.clasnav:hover {
+    background-color: #AAE9FF;
+    animation: 1s cambia_tamaño 1;
+}
+
+@keyframes cambia_tamaño {
+    100% {
+        border-top: solid 3px #C1EDE2;
+        border-bottom: solid 3px #C1EDE2;
+        border-left: solid 3px #C1EDE2;
+        border-right: solid 3px #C1EDE2;
+
+    }
+}
+
+#mainnav {
+    background-color: #406B60;
+    color: #C1EDE2;
+    border-color: #C1EDE2;
+    z-index: 50;
+
+}
+
+/*TITLE ANIMATION*/
+
+.text-flicker-in-glow {
+    -webkit-animation: text-flicker-in-glow 4s linear both;
+    animation: text-flicker-in-glow 4s linear both;
+}
+
+
+@-webkit-keyframes text-flicker-in-glow {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+}
+
+@keyframes text-flicker-in-glow {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    10.1% {
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    10.2% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    20.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+
+    20.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    30.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.5% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    30.6% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    45.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+    }
+
+    55.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    57.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35);
+    }
+
+    60.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    65.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    75.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    77.1% {
+        opacity: 1;
+        text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1);
+    }
+
+    85% {
+        opacity: 1;
+        color: #356063;
+        font-family: impact;
+        font-size: 46px;
+        text-shadow: -1px -1px 1px #C1EDE2, 1px 1px 1px #C1EDE2, -1px 1px 1px #C1EDE2, 1px -1px 1px #C1EDE2;
+    }
+
+    85.1% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    86.1% {
+        opacity: 1;
+        color: #356063;
+        font-family: impact;
+        font-size: 46px;
+        text-shadow: -1px -1px 1px #C1EDE2, 1px 1px 1px #C1EDE2, -1px 1px 1px #C1EDE2, 1px -1px 1px #C1EDE2;
+    }
+
+    100% {
+        opacity: 1;
+        color: #356063;
+        font-family: impact;
+        font-size: 46px;
+        text-shadow: -1px -1px 1px #C1EDE2, 1px 1px 1px #C1EDE2, -1px 1px 1px #C1EDE2, 1px -1px 1px #C1EDE2;
+    }
+}
+
+/*TITLE ANIMATION*/
+
+/*HEADER*/
+/*BODY*/
+/*GENERAL*/
+
+h2 {
+    text-align: center;
+    margin: auto;
+    border-bottom: solid 1px black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 35px;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    padding-bottom: 15px;
+    background-color: #408F8D;
+    border-radius: 30px 30px;
+    width: 80%;
+    z-index: 50;
+    opacity: 0.8;
+
+
+
+}
+
+#seccio {
+    text-align: center;
+    border-radius: 50px;
+    background-color: #408F8D;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    z-index: 50;
+    opacity: 0.8;
+
+}
+
+
+
+
+/*GENERAL*/
+/*GAME INFO*/
+table {
+    margin: 10px;
+    margin-left: 50px;
+    z-index: 50;
+    border-collapse: collapse;
+    border: 1.5px solid black;
+}
+
+th {
+
+    background-color: darkslategrey;
+    color: #C1EDE2;
+}
+
+td {
+    border: 1px solid black;
+}
+
+td {
+
+    padding: 5px;
+    text-align: center;
+}
+
+#table1 {
+    align-content: center;
+}
+
+caption {
+    font-weight: bold;
+}
+
+#table1,
+#table2 {
+    display: inline-block;
+}
+
+#table3 {
+    align-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+caption {
+    background-color: darkslategrey;
+
+    color: #C1EDE2;
+}
+
+.mapa {
+    height: 150px;
+    width: 200px;
+    display: inline-block;
+}
+
+
+
+/*GAME INFO*/
+/*RULES*/
+.bold {
+    font-weight: bold;
+    display: inline-block;
+    z-index: 50;
+}
+
+li {
+    font-weight: bold;
+}
+
+#nobold {
+    font-weight: normal;
+}
+
+#mainlist {
+    text-align: left;
+    text-align: justify;
+    padding: 30px;
+    z-index: 50;
+}
+
+.alpha {
+    list-style: lower-alpha;
+    z-index: 50;
+}
+
+
+
+
+
+/*RULES*/
+/*REGISTRATION*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+input {
+    display: flex;
+    align-content: space-between;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    display: flex;
+    align-content: space-between;
+}
+
+option {
+    display: flex;
+    align-content: space-between;
+}
+
+select {
+    display: flex;
+    align-content: space-between;
+}
+
+legend {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#fieldsetuno {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.firstline {
+    width: 35%;
+    display: flex;
+    flex-grow: 1;
+}
+
+#street {
+    width: 85%;
+    display: flex;
+    flex-grow: 1;
+}
+
+fieldset {
+    height: 300px;
+}
+
+.line3 {
+    width: 40%;
+    display: flex;
+    flex-grow: 1;
+}
+
+#line4 {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+}
+
+#line5 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#line6 {
+    display: flex;
+    width: inherit;
+}
+
+.parent {
+    width: 100%;
+}
+
+.fieldset2 {
+    height: 100px;
+}
+
+.secondfieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#legend1 {
+    width: 100%;
+}
+
+select {
+    height: 30px;
+}
+
+#secondschool {
+    height: 80%;
+}
+
+#firstschool {
+    height: 80%;
+}
+
+.position {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: 400px;
+}
+
+#soccerteaminfo {
+    height: 450px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    height: 20%;
+}
+
+.firstform {
+    display: flex;
+    flex-grow: 1;
+}
+
+.smallbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space {
+    height: 10px;
+    width: 100%;
+}
+
+/*REGISTRATION*/
+
+
+/*FOOTER*/
+
+footer {
+    margin: auto;
+    border-radius: 50px;
+    background-color: #408F8D;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 80%;
+    z-index: 50;
+    opacity: 0.8;
+}
+
+#gotop {
+    background-color: red:
+}
+
+
+/*FOOTER*/
